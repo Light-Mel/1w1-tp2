@@ -1,0 +1,51 @@
+/*article*/
+
+#article__2{
+    display: flex;
+    flex-direction:column;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 0;
+    align-items: center;
+  }
+  .article h2 {
+    margin-left: 15px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    color: #304d6d;
+  }
+  
+  .article p {
+    margin-left: 15px;
+  }
+  .article__p {
+    display: flex;
+    flex: 1 1 49%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+  }
+  
+.article__figure{
+    flex: 1 0 50%; /* le 1 permet à l'image d'utiliser l'espace restant.  */
+    
+}
+
+.article__img{
+    filter:grayscale(100%);
+    display: block;
+    width: 40%;
+    object-fit: cover;
+    
+}
+
+.article__img:hover{
+    filter: grayscale(0);
+}
+

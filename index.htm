@@ -1,14 +1,19 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP2</title>
+    <title>Mon Univers Créatif</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&family=Foldit:wght@100&family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="entete">
@@ -17,10 +22,11 @@
                 Pour créer rapidement un logo
                 https://www.canva.com/templates/?query=logo  
             -->
-            <div>
-            <figure class="entete__logo"><img src="images/logo2.png" alt="logo"></figure>
-            </div>
+            <div class="entete__2">
+            <figure class="entete__logo"><img src="images/logoMelCreation.png" alt="logo"></figure>
             <h1>Mon univers créatif</h1> 
+            </div>
+            
             <!-- https://svgbox.net/ -->
             <!--
                 id peut être utilisée une seule fois dans le document
@@ -36,15 +42,33 @@
                 <a href="#accueil">Accueil</a>
                 <a href="#horaire">Horaire</a>
                 <a href="#inscription">Inscription</a>
-                <a href="#article">Ariticle</a> 
+                <a href="#galerie">Galerie</a>
+                <a href="#article">Ariticle</a>
+                
             </nav>
         </header> 
     </div> <!-- fin .entete -->
    <div id="accueil">
     <section id="accueil__2">
         <h2>Accueil</h2>
-        <h3>Présentation</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde assumenda deleniti aspernatur animi saepe ipsam cupiditate, veniam enim quisquam nesciunt quibusdam beatae dolore veritatis corrupti amet rem. Similique, itaque.</p>
+        <h3>Voici le site Web d'une fille qui fait de l'écriture, du dessin et de la photographie.</h3>
+        <h3>Présentation:</h3>
+        <ul class="profil">
+            <li>Auteur : Mélanie Caillol</li>
+            <li>Cours : 1W1 - Mise en page Web</li>
+        </ul>
+        <h3>Ma page GitHub:</h3>
+            <a href="https://github.com/Light-Mel/1w1-gr4">Github-page</a> <!-- Je ne sais pas où trouver le liens de ma Github page... :/ -->
+            <a href="https://github.com/Light-Mel/1w1-gr4">Dépôt Github</a>
+        <h3>Mon parcours scolaire (Si ça intéresse quelqu'un, haha):</h3>
+        
+        <ul class="parcours">
+            <li>J'ai fait ma maternelle et la moitié de ma première année à l'école primaire Saint-Mathieu</li>
+            <li>J'ai fait le restant de mon primaire à l'école Jolivent</li>
+            <li>J'ai fait tout mon secondaire à l'école secondaire Polybel</li>
+            <li>Maintenant, j'étudie en technique d'intégration multimédia au collège de Maisonneuve</li>
+        </ul>
+        
     </section>
    </div> <!-- fin #accueil -->
    <div id="horaire">
@@ -149,62 +173,196 @@
         <h2>Inscription</h2>
         <!-- https://www.w3schools.com/html/html_forms.asp -->
          <form action="" class="formulaire">
-            <label class="form__nom" for="">Nom<input type="text"></label>
-            <label class="form__prenom" for="">Nom<input type="text"></label>
+            <div class="formulaire__2">
+                <label class="form__nom" for="">Nom<input type="text"></label>
+                <label class="form__prenom" for="">Prénom<input type="text"></label>
+            </div>
+           
+            <h3>Aidez-moi à choisir quel projet je devrais réaliser/finir à l'avenir s'il vous plait!</h3>
            <fieldset class="langage">
-            <legend>Langage</legend>
+            
+            <legend>(Oui, je suis désespérée à ce point-là)</legend>
             <div>
             <input type="checkbox"  id="chk__1">
-            <label for="chk__1">HTML</label>
+            <label for="chk__1">Écrire plus de poèmes (On en a jamais assez de toute façon)</label>
             </div>
+
             <div>
             <input type="checkbox"  id="chk__2">
-            <label for="chk__2">CSS</label>
+            <label for="chk__2">Me remettre à dessiner sur ma tablette graphique (Ça fait dur mon affaire)</label>
             </div>
+
             <div>
             <input type="checkbox"  id="chk__3">
-            <label for="chk__3">JS</label>
+            <label for="chk__3">Dessiner dans mes cahiers de dessin que j'ai abandonné (RIP)</label>
             </div>
+
             <div>
             <input type="checkbox"  id="chk__4">
-            <label for="chk__4">PHP</label>
+            <label for="chk__4">Continuer d'écrire mes débuts de roman non-terminés (J'ai du mal à les finir même si j'aimerais...)</label>
             </div>
+
            <div>
             <input type="checkbox"  id="chk__5">
-            <label for="chk__5">MySQL</label>
+            <label for="chk__5">Lire les livres que j'ai acheté et qui traînent dans ma bibliothèque depuis un an (Le pire c'est que j'aimerais les lire mais je ne trouve pas le temps pour le faire)</label>
            </div>
+
             <div>
             <input type="checkbox"  id="chk__6">
-            <label for="chk__6">Wordpress</label>
+            <label for="chk__6">Faire d'autres bijoux parce que ça me manque (Même si je me ruine à chaque fois pour acheter les matériaux)</label>
+            </div>
+
+            <div>
+            <input type="checkbox"  id="chk__7">
+            <label for="chk__7">Faire de la couture (Genre, continuer tous les projets que j'ai mis de côté pour les faire "plus tard", haha...)</label>
+            </div>
+
+            <div>
+            <input type="checkbox"  id="chk__8">
+            <label for="chk__8">Retenter de faire de l'aquarelle (Mon matériel d'art prend la poussière...)</label>
+            </div>
+            
+            <div>
+            <input type="checkbox"  id="chk__9">
+            <label for="chk__9">Continuer mes projets de jeux vidéo (Faerest, Askaming...)</label>
+            </div>
+
+            <div>
+            <input type="checkbox"  id="chk__10">
+            <label for="chk__10">Toutes ces réponses (Ça fait beaucoup quand même, non?)</label>
             </div>
             
         </fieldset>
+        <h3>Aidez-moi à m'améliorer!</h3>
         <fieldset>
             <!-- pour les radio bouton on créé un groupe en utilisant le même nom pour la même valeur pour l'attribut name-->
-            <legend>Age</legend>
+            <legend>Comment trouvez-vous ce site Web?</legend>
             <input type="radio" name="age" id="rad__1">
-            <label for="rad__1">11-15</label>
+            <label for="rad__1">Très bien! (Merci ^^)</label>
                 
             
             <input type="radio" name="age" id="rad__2">
-            <label for="rad__2">16-20</label>
+            <label for="rad__2">Assez bof... (Ok, je vais essayer de faire mieux)</label>
                 
             
             <input type="radio" name="age" id="rad__3">
-            <label for="rad__3">21-25 </label>
+            <label for="rad__3">Ish... Vraiment très moche! (À ce point là...? ;-;)</label>
         </fieldset>
 
     </section>
    </div> <!-- fin #inscription -->
 
+   <div id="galerie">
+    <section>
+        <div class="principal__image">
+            <h2>Galerie</h2>
+            <figure class="galerie">
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Caillol_Melanie_image1.jpg" alt="alexiane">
+                    <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Caillol_Melanie_image2.jpg" alt="alexiane">
+                    <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Caillol_Melanie_image3.jpg" alt="alexiane">
+                    <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/caillol_melanie_3grain.jpg" alt="garre">
+                    <figcaption class="galerie__caption">Photo de la garre de Saint-Hyacinthe, de nuit, prise dans le cadre de mon cours de 1M2</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/ignis_action_pose.webp" alt="dessin">
+                    <img class="galerie__img" src="images/ignis.jpg" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin d'Ignis, le personnage principal de mon jeu vidéo que je prévois de faire depuis un moment (Faerest)</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/aqua_hooo.webp" alt="dessin">
+                    <img class="galerie__img" src="images/aqua_hihi.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin d'Aqua, un de mes personnages pour Faerest</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/uirenui_glow_up.webp" alt="dessin">
+                    <img class="galerie__img" src="images/uirenui.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin de Uirentia, un de mes personnages pour Faerest</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/bulBBy2.webp" alt="dessin">
+                    <img class="galerie__img" src="images/bulBB.webp" alt="dessin">
+                    <img class="galerie__img" src="images/sketchy_bulb.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin de Bulbby (un autre personnage), concept de fiche de personnage</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/ignis_pose_gym.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Sketch d'Ignis pas terminé</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/eques_d.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Sketch d'Eques (un autre personnage) pas terminé avec références</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/tropicae_b.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Sketch de Tropicae (un autre personnage) pas terminé avec références</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/spideyyyy.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Sketch de Spidey (un autre personnage) pas très sérieux</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Faerest1.webp" alt="dessin">
+                    <img class="galerie__img" src="images/Faerest2.webp" alt="dessin">
+                    <img class="galerie__img" src="images/Faerest3.jpg" alt="dessin">
+                    <figcaption class="galerie__caption">Évolution du logo de mon jeu Faerest</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Noxu89.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin de Noxu, un personnage pour un autre jeu vidéo (Askaming)</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/ewewee.webp" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin de Noxu, concept pour Askaming</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <a href="https://www.youtube.com/watch?v=6POZlJAZsok"><img class="galerie__img" src="images/music2.jpg" alt="dessin"></a>
+                    <figcaption class="galerie__caption">Ma musique préférée en ce moment</figcaption>
+                </figure>
+                
+            </figure>
+        </div>
+    </section> <!-- fin galerie -->
+</div>
+
+
    <div id="article">
     <section id="article__2">
         <h2>Article</h2>
-        <div class="principal__image">
-            <figure class="principal__img"><img src="images/Caillol_Melanie_image2.jpg" alt="image">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figure>
-        </div>
+        <h3>Film à l'affiche: La Tueuse de Mots</h3>
+        <h4 class="article__p">Il est dit qu’un être surnaturel prenant la forme d’une jeune fille
+            rode la nuit à la recherche de proies potentielles. Cette créature humanoïde se nourrit de mots et d’aventures,
+            volant des parties des rêves de ses victimes. Elle coupe les rêves à l’aide de son couteau, les effaçant complètement
+            des mémoires de leurs porteurs. Une fois le rêve englouti, elle attend la nuit d’après pour attaquer de nouveau.
+            Certains l’appellent la tueuse de mots, un surnom familier faisant référence à son pouvoir sournois. Les scientifiques,
+            pour leur part, l’appelleraient « l’Oniria. » Malgré qu’elle soit la cible de multiples recherches, son existence reste
+            pourtant toujours inexpliquée jusqu’à ce jour.</h4>
+            <figure class="article__figure">
+                <img class="article__img" src="images/la tueuse de mots Melanie Caillol final.jpg" alt="film">
+            </figure>
     </section>
-   </div>
+    </div> <!-- fin article -->
+
+    
    <div id="contact">
     <footer class="piedPage">
         <div class="global">
@@ -231,8 +389,13 @@
                     </div>
     
                     <div class="piedPage__div3">
-                        <h1 class="piedPage__h1">Résumé</h1>
-                        <h3 class="piedPage__h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum iusto corporis commodi illum temporibus soluta recusandae repudiandae placeat debitis, tempore voluptas ad velit voluptatem necessitatibus reiciendis nemo at magnam ut!</h3>
+                        <h1 class="piedPage__h1">Où me contacter</h1>
+                        <a href="https://github.com/Light-Mel"><img class="piedPage__icone" src="images/github.png" alt="icone"></a>
+                        <a href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqVNpZKfjgrDbjjsnqTwMnMVWZGGhdqMmXSVNZbfwmDxShjZNTxRFLLhPMrsMzzlZHLbxq"><img class="piedPage__icone" src="images/courriel.png" alt="icone"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100004361715548"><img class="piedPage__icone" src="images/facebook.png" alt="icone"></a>
+                        <a href="https://www.instagram.com/thelittlelightbulb_42/"><img class="piedPage__icone" src="images/instagram.png" alt="icone"></a>
+                        <a href="https://www.behance.net/mlaniecaillol1"><img class="piedPage__icone" src="images/behance.png" alt="icone"></a>
+                        <a href="https://www.youtube.com/channel/UCXFvvOjjt-PdsXwx8A-xUrQ"><img class="piedPage__icone" src="images/youtube.png" alt="icone"></a>
                     </div>
     </footer>
    </div>

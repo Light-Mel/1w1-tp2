@@ -1,0 +1,25 @@
+.galerie{
+    display: flex;
+    gap:10px;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.galerie__figure{
+    flex:0 1 200px;
+    border: 11px dotted #fff;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.galerie__img{
+    filter:grayscale(100%);
+    width:100%;
+    
+}
+
+.galerie__img:hover{
+    filter: grayscale(0);
+}
+
+.galerie__caption{}

@@ -39,9 +39,7 @@ body  > div {
     justify-content: center;
  
 }
-#entete {
-   
-}
+
 
 body > div > section,
 body > div > footer,
@@ -50,10 +48,12 @@ body > div > header {
     flex: 0 1 1100px;
     border : 1px solid #aaa;
     background-color: rgba(0,0,0,.1); /* filtre de transparence */
+    background-color: rgba(255, 255, 255, .5); /*blanchir la couleur*/
 }
 
 body > div > section {
-    padding-top : 100px;
+    /*padding-top : 100px;*/
+    margin-top: 175px;
 }
 
 body > div > header{
@@ -73,17 +73,21 @@ body>div:nth-of-type(2){
     background-color: rgb(175, 189, 236);
 }
 body>div:nth-of-type(3){
-    background-color: rgb(189, 235, 105);
+    background-color: rgb(175, 189, 236);
 }
 body>div:nth-of-type(4){
-    background-color: rgb(221, 166, 62)
+    background-color: rgb(175, 189, 236);
 }
 body>div:nth-of-type(5){
-    background-color: rgb(221, 144, 183);
+    background-color: rgb(175, 189, 236);
 }
 
 body>div:nth-of-type(6){
-    background-color: #fff;
+    background-color: rgb(175, 189, 236);
+}
+
+body>div:nth-of-type(7){
+    background-color: rgb(175, 189, 236);
 }
 
 #horaire__2{
@@ -110,8 +114,8 @@ body>div:nth-of-type(6){
     text-align: center;
 }
 .horaire th{
-    background-color: rgb(180,150,150);
-    border: 1px solid #9a1212;
+    background-color: rgb(155, 150, 180);
+    border: 1px solid #000000;
     
 }
 
@@ -175,6 +179,22 @@ body>div:nth-of-type(6){
 
 /*entete*/
 
+#entete {
+    position: sticky;
+    top:0;
+    /*
+    90deg : de gauche à droite
+    -90deg : de droite à gauche
+    */
+    background-image: linear-gradient(20deg, rgb(223, 175, 236), rgb(236, 222, 175));
+    z-index: 10;
+ }
+
+ .entete__2{
+    display: flex;
+   align-items: center;
+ }
+
 .entete__logo{
     width: 150px;
     flex: 0 0 150px;
@@ -184,14 +204,8 @@ body>div:nth-of-type(6){
 .entete__logo img{
     display: block;
     width:100%;
-    margin: 0 0 0 10px;
-}
-
-/*accueil*/
-
-#accueil__2{
-    display: flex;
-    flex-direction: column;
+    margin: 10px 0 10px 10px;
+    /*border-radius: 50%;*/
 }
 
 /*inscription*/
@@ -201,19 +215,14 @@ body>div:nth-of-type(6){
     flex-direction: column;
 }
 
-/*article*/
-
-#article__2{
-    display: flex;
-    flex-direction:column;
-}
 
 .principal__image{
     display: flex;
     width: 50%;
-    flex: 0 0 500px;
+    flex: 0 0 1039px;
     flex-wrap: wrap;
     font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;
 }
 
 .principal__img img{
@@ -245,7 +254,9 @@ body>div:nth-of-type(6){
     flex: 0 0 500px;
     width:100%;
 }
-.piedPage__ul{
+
+
+.piedPage__ul ul{
     font-size: 1rem;
     list-style-position: inside;
     font-family: 'Times New Roman', Times, serif;
@@ -261,4 +272,32 @@ body>div:nth-of-type(6){
 .piedPage__h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#444;
+}
+
+.piedPage__icone{
+    
+}
+
+header h1{
+    font-size: clamp(1rem, -15rem + 32vw, 3rem);
+    /*text-shadow: 6px 4px 12px #555;*/
+    margin:0.67em 0 .67em 200px;
+}
+
+h1{
+    
+    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 2.5rem);
+    /*text-shadow: 6px 4px 12px #555;*/
+}
+h2{
+    font-family: 'Merienda', cursive;
+    font-size: clamp(1.5rem, -1.292rem + 7.333vw, 2rem);
+}
+h3{
+    font-size: clamp(0.9rem, -1.292rem + 7.333vw, 1.5rem);
+}
+h4{}
+
+p{
+    font-size: clamp(0.5rem, -1.292rem + 7.333vw, 0.9rem);
 }

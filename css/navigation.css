@@ -1,12 +1,14 @@
 .navigation {
     display: flex;
     position: absolute;
-    top : 100%;
+    top : 0;
     right : 0;
    background-color: black;
    gap: 5px;
    padding: 10px;
    flex-direction: column;
+   width:100px;
+   
    /*
    top: 
    bottom:
@@ -16,6 +18,17 @@
    transform : translateY(-400%);
    transition : transform .25s;
 }
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: #444;
+    text-shadow: 1px 1px 2px #4e5661;
+  
+    background-color: rgb(33 185 183 / 30%);
+  }
+
 #burger {
     margin-left: auto; /* utilise l'espace restant à gauche de la navigation*/
     position: relative;
@@ -24,7 +37,7 @@
 #burger img{
     position : absolute;
     top:0;
-    right:0;
+    left:0;
     
 }
 /*les 3 barres*/
