@@ -1,0 +1,95 @@
+#horaire__2{
+    display: flex;
+    flex-direction: column;
+}
+
+.horaire{
+    border-collapse: collapse;
+    flex: 1 0 80%;
+    
+}
+
+.horaire caption{
+    font-family: 'Leckerli One', cursive;
+    font-size: 3rem;
+    color: #000;
+}
+
+.horaire td, .horaire th{
+    /*border: 1px solid #aaa;*/
+    padding: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+.horaire th{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+   padding:10px;
+   color: #fff;
+    
+}
+
+.horaire tr{
+}
+
+.cours{
+    border: 1px solid #000;
+  
+}
+
+.horaire .activites{
+    background-color: rgb(232, 238, 146);
+    
+    font-family: 'Courier Prime', monospace;
+}
+
+.horaire p{
+    font-size: 1.2rem;
+}
+
+.horaire caption{
+    font-size: 2rem;
+    background-color: #fff;
+}
+
+/*.coteDroit {
+    border-right: 1px solid #000;
+}
+
+.coteBas{
+    border-bottom: 1px solid #000;
+}*/
+/* une classe ne peut pas commencer par un chiffre (.5w5 serait illégal)*/
+.cours1m1{
+    border: 1px solid #000000;
+    background-color: rgb(146, 238, 174);
+}
+
+.cours1w1{
+    border: 1px solid #000000;
+    background-color: rgb(238, 146, 146);
+}
+
+.cours102{
+    border: 1px solid #000000;
+    background-color: rgb(146, 204, 238);
+}
+
+.cours101{
+    border: 1px solid #000000;
+    background-color:  rgb(238, 183, 146);
+}
+
+.cours1j1{
+    border: 1px solid #000000;
+    background-color: rgb(238, 146, 230);
+}
+
+.cours1m2{
+    border: 1px solid #000000;
+    background-color: rgb(160, 146, 238);
+}
+
+.vide{
+    border: 1px solid #000;
+}

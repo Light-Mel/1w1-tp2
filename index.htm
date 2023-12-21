@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/horaire.css">
+    <link rel="stylesheet" href="css/inscription.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&family=Foldit:wght@100&family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -43,6 +46,7 @@
                 <a href="#horaire">Horaire</a>
                 <a href="#inscription">Inscription</a>
                 <a href="#galerie">Galerie</a>
+                <a href="#video">Vidéo</a>
                 <a href="#article">Ariticle</a>
                 
             </nav>
@@ -58,8 +62,8 @@
             <li>Cours : 1W1 - Mise en page Web</li>
         </ul>
         <h3>Ma page GitHub:</h3>
-            <a href="https://github.com/Light-Mel/1w1-gr4">Github-page</a> <!-- Je ne sais pas où trouver le liens de ma Github page... :/ -->
-            <a href="https://github.com/Light-Mel/1w1-gr4">Dépôt Github</a>
+            <a href="https://light-mel.github.io/1w1-tp2/">Github-page</a> <!-- Je ne sais pas où trouver le liens de ma Github page... :/ -->
+            <a href="https://github.com/Light-Mel/1w1-tp2">Dépôt Github</a>
         <h3>Mon parcours scolaire (Si ça intéresse quelqu'un, haha):</h3>
         
         <ul class="parcours">
@@ -90,9 +94,9 @@
             <!-- pour chacune des lignes suivantes le premier contient l'heure de début du cours-->
            <tr>
                 <th>8h</th>
-                <td></td> <!-- lundi -->
+                <td class="vide"></td> <!-- lundi -->
                 <!-- On peut utiliser plus d'une classe dans un même élément-->
-                <td></td> <!-- mardi -->
+                <td class="vide"></td><!-- mardi -->
                 <td rowspan='3' class="cours1m1">1M1</td> <!-- mercredi -->
                 <td rowspan="2" class="cours1w1">1W1</td> <!-- jeudi -->
                 <td rowspan="2" class="cours1m1">1M1</td> <!-- vendredi -->
@@ -101,7 +105,7 @@
             <tr>
                 <th>9h</th>
                 <td rowspan="3" class="cours1w1">1W1</td> <!-- lundi -->
-                <td></td> <!-- mardi -->
+                <td class="vide"></td> <!-- mardi -->
                 <!-- <td class="cours1m1">1M1</td> --> <!-- mercredi -->
                 
                 
@@ -109,48 +113,48 @@
     
             <tr>
                 <th>10h</th>
-                <td></td> <!-- mardi -->
+                <td class="vide"></td> <!-- mardi -->
                 <!-- <td class="cours1m1">1M1</td> --> <!-- mercredi -->
-                <td></td> <!-- jeudi -->
-                <td class="coteDroit"></td> <!-- vendredi -->
+                <td class="vide"></td> <!-- jeudi -->
+                <td class="vide"></td> <!-- vendredi -->
            </tr>
     
             <tr>
                 <th>11h</th>
-                <td></td> <!-- mardi -->
-                <td></td> <!-- mercredi -->
-                <td></td> <!-- jeudi -->
+                <td class="vide"></td> <!-- mardi -->
+                <td class="vide"></td> <!-- mercredi -->
+                <td class="vide"></td><!-- jeudi -->
                 <td rowspan="3" class="cours102">102</td> <!-- vendredi -->
            </tr>
     
             <tr>
                 <th>12h</th>
-                <td></td> <!-- lundi -->
-                <td rowspan="2" class="activites">Activités communes</td> <!-- mardi -->
+                <td class="vide"></td> <!-- lundi -->
+                <td rowspan="2" class="activites"><p>Activités</p> <p>communes</p></td> <!-- mardi -->
                 <td rowspan="3" class="cours1m2">1M2</td> <!-- mercredi -->
-                <td rowspan="2" class="activites">Activités communes</td> <!-- jeudi -->
+                <td rowspan="2" class="activites"><p>Activités</p> <p>communes</p></td> <!-- jeudi -->
            </tr>
            
            <tr>
                 <th>13h</th>
-                <td></td> <!-- lundi -->
+                <td class="vide"></td> <!-- lundi -->
                 
            </tr>
     
            <tr>
                 <th>14h</th>
-                <td></td> <!-- lundi -->
+                <td class="vide"></td> <!-- lundi -->
                 <td rowspan="3" class="cours1m2">1M2</td> <!-- mardi -->
         
                 <td rowspan ="3" class="cours1j1">1J1</td> <!-- jeudi -->
-                <td class="coteDroit"></td> <!-- vendredi -->
+                <td class="vide"></td> <!-- vendredi -->
            </tr>
     
            <tr>
                 <th>15h</th>
                 <td rowspan="2" class="cours1j1">1J1</td> <!-- lundi -->
-                <td></td> <!-- mercredi -->
-                <td class="coteDroit"></td> <!-- vendredi -->
+                <td class="vide"></td> <!-- mercredi -->
+                <td class="vide"></td> <!-- vendredi -->
            </tr>
            
            <tr>
@@ -161,9 +165,9 @@
     
            <tr>
                 <th>17h</th>
-                <td class="coteBas"></td> <!-- lundi -->
-                <td class="coteBas"></td> <!-- mardi -->
-                <td class="coteBas"></td> <!-- jeudi -->
+                <td class="vide"></td> <!-- lundi -->
+                <td class="vide"></td> <!-- mardi -->
+                <td class="vide"></td> <!-- jeudi -->
            </tr>
         </table>
     </section>
@@ -258,46 +262,55 @@
             <h2>Galerie</h2>
             <figure class="galerie">
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/Caillol_Melanie_image1.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/creepy.jpg" alt="alexiane">
+                    
                     <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/Caillol_Melanie_image2.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/write.jpg" alt="alexiane">
+                    
                     <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/Caillol_Melanie_image3.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/eye.jpg" alt="alexiane">
+                    
                     <figcaption class="galerie__caption">Photo de mon amie, Alexiane, prise dans le cadre de mon cours de 1M2</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/caillol_melanie_3grain.jpg" alt="garre">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/garre.jpg" alt="garre">
+                    
                     <figcaption class="galerie__caption">Photo de la garre de Saint-Hyacinthe, de nuit, prise dans le cadre de mon cours de 1M2</figcaption>
                 </figure>
 
-                <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/ignis_action_pose.webp" alt="dessin">
-                    <img class="galerie__img" src="images/ignis.jpg" alt="dessin">
-                    <figcaption class="galerie__caption">Dessin d'Ignis, le personnage principal de mon jeu vidéo que je prévois de faire depuis un moment (Faerest)</figcaption>
+                <figure class="galerie__figure1">
+                    <img class="galerie__img1" src="images/ignis_action_pose.webp" alt="dessin">
+                    <img class="galerie__img1" src="images/ignis.jpg" alt="dessin">
+                    <figcaption class="galerie__caption">Dessin d'Ignis, le personnage principal de Faerest</figcaption>
                 </figure>
 
-                <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/aqua_hooo.webp" alt="dessin">
-                    <img class="galerie__img" src="images/aqua_hihi.webp" alt="dessin">
+                <figure class="galerie__figure1">
+                    <img class="galerie__img1" src="images/aqua_hooo.webp" alt="dessin">
+                    <img class="galerie__img1" src="images/aqua_hihi.webp" alt="dessin">
                     <figcaption class="galerie__caption">Dessin d'Aqua, un de mes personnages pour Faerest</figcaption>
                 </figure>
 
-                <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/uirenui_glow_up.webp" alt="dessin">
-                    <img class="galerie__img" src="images/uirenui.webp" alt="dessin">
+                <figure class="galerie__figure1">
+                    <img class="galerie__img1" src="images/uirenui_glow_up.webp" alt="dessin">
+                    <img class="galerie__img1" src="images/uirenui.webp" alt="dessin">
                     <figcaption class="galerie__caption">Dessin de Uirentia, un de mes personnages pour Faerest</figcaption>
                 </figure>
-                <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/bulBBy2.webp" alt="dessin">
-                    <img class="galerie__img" src="images/bulBB.webp" alt="dessin">
-                    <img class="galerie__img" src="images/sketchy_bulb.webp" alt="dessin">
+                <figure class="galerie__figure2">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img1" src="images/da_bulb.jpg" alt="dessin">
+                    <img class="galerie__img2" src="images/sketchy_bulb.jpg" alt="dessin">
+                    
                     <figcaption class="galerie__caption">Dessin de Bulbby (un autre personnage), concept de fiche de personnage</figcaption>
                 </figure>
                 <figure class="galerie__figure">
@@ -317,25 +330,32 @@
                     <figcaption class="galerie__caption">Sketch de Spidey (un autre personnage) pas très sérieux</figcaption>
                 </figure>
 
-                <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/Faerest1.webp" alt="dessin">
-                    <img class="galerie__img" src="images/Faerest2.webp" alt="dessin">
-                    <img class="galerie__img" src="images/Faerest3.jpg" alt="dessin">
+                <figure class="galerie__figure2">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img1" src="images/faerest_new.jpg" alt="dessin">
+                    <img class="galerie__img2" src="images/faerest_old.jpg" alt="dessin">
+                    
                     <figcaption class="galerie__caption">Évolution du logo de mon jeu Faerest</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/Noxu89.webp" alt="dessin">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/noxu_pix.jpg" alt="dessin">
+                    
                     <figcaption class="galerie__caption">Dessin de Noxu, un personnage pour un autre jeu vidéo (Askaming)</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/ewewee.webp" alt="dessin">
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <img class="galerie__img" src="images/noxu_paint.jpg" alt="dessin">
+                    
                     <figcaption class="galerie__caption">Dessin de Noxu, concept pour Askaming</figcaption>
                 </figure>
 
                 <figure class="galerie__figure">
-                    <a href="https://www.youtube.com/watch?v=6POZlJAZsok"><img class="galerie__img" src="images/music2.jpg" alt="dessin"></a>
+                    <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
+                    <a href="https://www.youtube.com/watch?v=6POZlJAZsok"><img class="galerie__img" src="images/just_2.jpg" alt="dessin"></a>
+                    
                     <figcaption class="galerie__caption">Ma musique préférée en ce moment</figcaption>
                 </figure>
                 
@@ -343,6 +363,19 @@
         </div>
     </section> <!-- fin galerie -->
 </div>
+
+<div id="video">
+    <section>
+        <div class="principal__video">
+            <h2>Vidéo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fDLOpE0mO9M?si=B8VhtvZwqXQYdGFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+</div>
+
+
+
+
 
 
    <div id="article">
