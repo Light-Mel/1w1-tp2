@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="css/horaire.css">
-    <link rel="stylesheet" href="css/inscription.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&family=Foldit:wght@100&family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -27,7 +26,7 @@
             -->
             <div class="entete__2">
             <figure class="entete__logo"><img src="images/logoMelCreation.png" alt="logo"></figure>
-            <h1>Mon univers créatif</h1> 
+            <h1>Mon Univers Créatif</h1> 
             </div>
             
             <!-- https://svgbox.net/ -->
@@ -37,16 +36,18 @@
             -->
             <input type="checkbox" id="chk_burger">
             <label id="burger" for="chk_burger">
-                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32">
-                <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=000" width="32" height="32">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32" alt="chkBurger">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&amp;color=fff" width="32" height="32" alt="leX">
             </label>
             
             <nav class="navigation">
+                <a href=""></a>
+                <a href=""></a>
                 <a href="#accueil">Accueil</a>
                 <a href="#horaire">Horaire</a>
-                <a href="#inscription">Inscription</a>
+                <a href="#formulaire">Formulaire</a>
                 <a href="#galerie">Galerie</a>
-                <a href="#video">Vidéo</a>
+                <a href="#video">Vidéos</a>
                 <a href="#article">Ariticle</a>
                 
             </nav>
@@ -62,9 +63,9 @@
             <li>Cours : 1W1 - Mise en page Web</li>
         </ul>
         <h3>Ma page GitHub:</h3>
-            <a href="https://light-mel.github.io/1w1-tp2/">Github-page</a> <!-- Je ne sais pas où trouver le liens de ma Github page... :/ -->
+            <a href="https://light-mel.github.io/1w1-tp2/">Github-page</a> 
             <a href="https://github.com/Light-Mel/1w1-tp2">Dépôt Github</a>
-        <h3>Mon parcours scolaire (Si ça intéresse quelqu'un, haha):</h3>
+        <h3>Mon parcours scolaire:</h3>
         
         <ul class="parcours">
             <li>J'ai fait ma maternelle et la moitié de ma première année à l'école primaire Saint-Mathieu</li>
@@ -172,17 +173,19 @@
         </table>
     </section>
    </div> <!-- fin #horaire -->
-   <div id="inscription">
+   <div id="formulaire">
     <section id="inscription__2">
-        <h2>Inscription</h2>
+        <h2>Formulaire</h2>
         <!-- https://www.w3schools.com/html/html_forms.asp -->
-         <form action="" class="formulaire">
+         <form class="formulaire">
             <div class="formulaire__2">
-                <label class="form__nom" for="">Nom<input type="text"></label>
-                <label class="form__prenom" for="">Prénom<input type="text"></label>
+                <h3 class="nomPrenom">Nom :</h3>
+                <label class="form__nom"><input type="text"></label>
+                <h3 class="nomPrenom">Prénom :</h3>
+                <label class="form__prenom"><input type="text"></label>
             </div>
-           
-            <h3>Aidez-moi à choisir quel projet je devrais réaliser/finir à l'avenir s'il vous plait!</h3>
+           <hr>
+            <h3 class="formulaire__h3">Aidez-moi à choisir quel projet je devrais réaliser/finir à l'avenir s'il vous plait!</h3>
            <fieldset class="langage">
             
             <legend>(Oui, je suis désespérée à ce point-là)</legend>
@@ -237,7 +240,7 @@
             </div>
             
         </fieldset>
-        <h3>Aidez-moi à m'améliorer!</h3>
+        <h3 class="formulaire__h3">Aidez-moi à m'améliorer!</h3>
         <fieldset>
             <!-- pour les radio bouton on créé un groupe en utilisant le même nom pour la même valeur pour l'attribut name-->
             <legend>Comment trouvez-vous ce site Web?</legend>
@@ -253,13 +256,15 @@
             <label for="rad__3">Ish... Vraiment très moche! (À ce point là...? ;-;)</label>
         </fieldset>
 
+        <a class="formulaire__envoyer" href="https://rickroll.it/rickroll.mp4"><h3 >Envoyer</h3></a>
+
     </section>
    </div> <!-- fin #inscription -->
 
    <div id="galerie">
     <section>
         <div class="principal__image">
-            <h2>Galerie</h2>
+            <h2 class="galerie__h2">Galerie</h2>
             <figure class="galerie">
                 <figure class="galerie__figure">
                     <img class="galerie__img" src="images/noir.jpg" alt="alexiane">
@@ -365,10 +370,76 @@
 </div>
 
 <div id="video">
-    <section>
+    <section class="video__section">
+        <h2>Vidéos</h2>
         <div class="principal__video">
-            <h2>Vidéo</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fDLOpE0mO9M?si=B8VhtvZwqXQYdGFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+            
+            
+            <figure class="video__figure">
+                <video width="560" height="315" controls>
+                    <source class="video__vid" src="images/vidéo 1 seconde FINAL Mélanie Caillol.mp4" type="video/mp4">
+                    
+                  </video>
+                  <figcaption class="video__caption">Projet Leap second 2021 - 2022 (secondaire 4)</figcaption>
+            </figure>
+        
+           
+            <figure class="video__figure">
+                <video width="560" height="315" controls>
+                    <source class="video__vid" src="images/final.mp4" type="video/mp4">
+                    
+                  </video>
+                  <figcaption class="video__caption">Projet Leap second 2022 - 2023 (secondaire 5)</figcaption>
+    
+            </figure>
+
+            <figure class="video__figure">
+                <iframe class="video__vid" width="560" height="315" src="https://www.youtube.com/embed/fDLOpE0mO9M?si=B8VhtvZwqXQYdGFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+            <figcaption class="video__caption">Au galop pour la mort (court métrage de secondaire 5)</figcaption>
+            </figure>
+
+            <figure class="video__figure">
+                <video class="video__vid" width="560" height="315" controls>
+                    <source src="images/caillol-melanie_devoir-2_meilleur-qualite.mp4" type="video/mp4">
+                   
+                  </video>
+                  <figcaption class="video__caption">8h10, Top Chrono! (court métrage d'1M1 numéro 1)</figcaption>
+                </figure>
+
+            <figure class="video__figure">
+                <video class="video__vid" width="560" height="315" controls>
+                    <source src="images/Caillol_Melanie_pub_tele_quebec.mp4" type="video/mp4">
+                   
+                  </video>
+                  <figcaption class="video__caption">Les samedis de l'épouvante (publicité Télé-Québec, court métrage d'1M1 numéro 2)</figcaption>
+                </figure>
+
+            <figure class="video__figure">
+                <video class="video__vid" width="560" height="315" controls>
+                    <source src="images/Caillol_melanie_le_vagabond_tim3.mp4" type="video/mp4">
+                   
+                  </video>
+                  <figcaption class="video__caption">Le Vagabond (court métrage d'1M1 numéro 3)</figcaption>
+                </figure>
+
+            <figure class="video__figure">
+                <video class="video__vid" width="560" height="315" controls>
+                    <source src="images/Caillol_melanie_projet_final_exam.mp4" type="video/mp4">
+                   
+                  </video>
+                  <figcaption class="video__caption">Demain - La Vie Entre Nos Mains (examen d'1M1 en classe, court métrage numéro 4)</figcaption>
+                </figure>
+              
+            <figure class="video__figure">
+                <video class="video__vid" width="560" height="315" controls>
+                    <source src="images/caillol_melanie_TP1.mp4" type="video/mp4">
+                    
+                  </video>
+                  <figcaption class="video__caption">Liens du Destin (court métrage d'1M1 numéro 5)</figcaption>
+                </figure>
+
         </div>
     </section>
 </div>
@@ -380,18 +451,25 @@
 
    <div id="article">
     <section id="article__2">
+        
         <h2>Article</h2>
-        <h3>Film à l'affiche: La Tueuse de Mots</h3>
-        <h4 class="article__p">Il est dit qu’un être surnaturel prenant la forme d’une jeune fille
-            rode la nuit à la recherche de proies potentielles. Cette créature humanoïde se nourrit de mots et d’aventures,
-            volant des parties des rêves de ses victimes. Elle coupe les rêves à l’aide de son couteau, les effaçant complètement
-            des mémoires de leurs porteurs. Une fois le rêve englouti, elle attend la nuit d’après pour attaquer de nouveau.
-            Certains l’appellent la tueuse de mots, un surnom familier faisant référence à son pouvoir sournois. Les scientifiques,
-            pour leur part, l’appelleraient « l’Oniria. » Malgré qu’elle soit la cible de multiples recherches, son existence reste
-            pourtant toujours inexpliquée jusqu’à ce jour.</h4>
+        <div class="article__divH3">
+            <h3 class="article__h3">Film à l'affiche: La Tueuse de Mots</h3>
+        </div>
+        <div class="article__div">
             <figure class="article__figure">
                 <img class="article__img" src="images/la tueuse de mots Melanie Caillol final.jpg" alt="film">
             </figure>
+            <h4 class="article__p">Il est dit qu’un être surnaturel prenant la forme d’une jeune fille
+                rode la nuit à la recherche de proies potentielles. Cette créature humanoïde se nourrit de mots et d’aventures,
+                volant des parties des rêves de ses victimes. Elle coupe les rêves à l’aide de son couteau, les effaçant complètement
+                des mémoires de leurs porteurs. Une fois le rêve englouti, elle attend la nuit d’après pour attaquer de nouveau.
+                Certains l’appellent la tueuse de mots, un surnom familier faisant référence à son pouvoir sournois. Les scientifiques,
+                pour leur part, l’appelleraient « l’Oniria. » Malgré qu’elle soit la cible de multiples recherches, son existence reste
+                pourtant toujours inexpliquée jusqu’à ce jour.</h4>
+        </div>
+       
+            
     </section>
     </div> <!-- fin article -->
 
@@ -429,6 +507,11 @@
                         <a href="https://www.instagram.com/thelittlelightbulb_42/"><img class="piedPage__icone" src="images/instagram.png" alt="icone"></a>
                         <a href="https://www.behance.net/mlaniecaillol1"><img class="piedPage__icone" src="images/behance.png" alt="icone"></a>
                         <a href="https://www.youtube.com/channel/UCXFvvOjjt-PdsXwx8A-xUrQ"><img class="piedPage__icone" src="images/youtube.png" alt="icone"></a>
+                    </div>
+                    
+                    <div id="piedAvis">
+                        <hr>
+                        Avis de confidentialité | Privacy Notice
                     </div>
     </footer>
    </div>
